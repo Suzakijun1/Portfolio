@@ -1,15 +1,20 @@
-import logo from "./logo.svg";
 import React from "react";
 import Typed from "react-typed";
+import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
-
+import Navbar from "./components/Navbar/Navbar";
+import About from "./pages/About/About";
+import Work from "./pages/Work/Work";
+import Contact from "./pages/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <About />
+      <Work />
+      <Contact />
+      <Footer />
     </div>
   );
 }
