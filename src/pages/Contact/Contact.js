@@ -1,3 +1,5 @@
+import { ContactSec } from "./Contact.styles";
+
 export default function Contact() {
-  return <div id="contactSection">this is the contact page</div>;
+  return <ContactSec id="contactSection">this is the contact page</ContactSec>;
 }

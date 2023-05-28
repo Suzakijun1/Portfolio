@@ -1,3 +1,5 @@
+import { AboutSec } from "./About.styles";
+
 export default function About() {
-  return <div id="aboutSection">this is the about page</div>;
+  return <AboutSec id="aboutSection">this is the about page</AboutSec>;
 }

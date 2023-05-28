@@ -2,6 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
+import ParticlesBackground from "./components/Particles/ParticlesBackground";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About/About";
 import Work from "./pages/Work/Work";
@@ -10,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div>
+      <ParticlesBackground />
       <Navbar />
       <About />
       <Work />
