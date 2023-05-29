@@ -5,7 +5,7 @@ import Type from "./Type";
 
 export default function Home() {
   return (
-    <HomeSec id="aboutSection">
+    <HomeSec id="homeSection">
       Hello! This is the Home Page!
       <div className="home-section container-fluid">
         <div className="row">

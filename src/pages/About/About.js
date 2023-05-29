@@ -1,4 +1,5 @@
 import { AboutSec } from "./About.styles";
+import AboutLogo from "../../Assets/WebDevelopmentBanner.webp";
 
 export default function About() {
   return (
@@ -6,7 +7,10 @@ export default function About() {
       this is the about page
       <div className="about-section container-fluid">
         <div className="row">
-          <div className="col-md-6 d-flex align-items-center">
+          <div className="col-md-12 d-flex align-items-center">
+            <div className="about-img">
+              <img src={AboutLogo} alt="about" className="img-fluid" />
+            </div>
             <div className="about-content">
               <h1>About Me</h1>
               <p>
