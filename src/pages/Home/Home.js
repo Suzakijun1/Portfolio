@@ -1,6 +1,7 @@
 import { HomeSec } from "./Home.styles";
 import { HomeContainer } from "./Home.styles";
 import homeLogo from "../../Assets/coding-man-image.jpg";
+import Type from "./Type";
 
 export default function Home() {
   return (
@@ -11,13 +12,13 @@ export default function Home() {
           <div className="col-md-6 d-flex align-items-center">
             <div className="home-content">
               Hello, I'm <strong className="main-name">Dylan Yong</strong>
-              <p className="sub-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quisquam, voluptatum.
-              </p>
+              <Type className="sub-content"></Type>
               <div className="home-btn">
-                <a href="#" className="btn btn-outline">
-                  Hire Me
+                <a
+                  href="#"
+                  className="btn btn-outline border btn-primary bg-gradient"
+                >
+                  Check out my work!
                 </a>
                 <a href="#" className="btn btn-smart">
                   Download CV
