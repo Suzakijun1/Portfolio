@@ -1,5 +1,8 @@
 body {
-  /* background-image: url('./Assets/Black\ Sky\ Galaxy\ Stars\ Desktop\ Wallpaper.png') */
+  background-image: url('./Assets/starry_sky_galaxy_stars_125852_1920x1080.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
 }
 
 code {
