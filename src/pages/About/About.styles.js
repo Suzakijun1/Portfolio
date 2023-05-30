@@ -2,6 +2,14 @@ import styled from "styled-components";
 
 export const AboutSec = styled.div`
   color: white;
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+  }
+  p {
+    font-size: 30px;
+  }
 
   img {
     height: 400px;
