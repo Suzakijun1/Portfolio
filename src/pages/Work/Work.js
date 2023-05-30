@@ -1,5 +1,6 @@
 import { WorkSec } from "./Work.styles";
 import BiteBud from "../../Assets/biteBud.png";
+import MyDropdown from "./Dropdown";
 
 export default function Work() {
   return (
@@ -30,6 +31,13 @@ export default function Work() {
                   className="btn btn-primary"
                 >
                   View Project
+                </a>
+                <a
+                  href="https://github.com/Suzakijun1/BiteBud"
+                  target="_blank"
+                  className="btn btn-primary"
+                >
+                  View Github
                 </a>
               </div>
             </div>
@@ -71,6 +79,7 @@ export default function Work() {
                 <a href="#" className="btn btn-primary">
                   View Project
                 </a>
+                <MyDropdown />
               </div>
             </div>
           </div>
