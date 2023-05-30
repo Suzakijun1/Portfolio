@@ -28,8 +28,8 @@ function MyDropdown2() {
       <Dropdown.Menu>
         <Dropdown.Item href="#action1">Node.JS</Dropdown.Item>
         <Dropdown.Item href="#action2">Express.JS</Dropdown.Item>
-        <Dropdown.Item href="#action3">JavaScript</Dropdown.Item>
-        <Dropdown.Item href="#action3">MongoDB</Dropdown.Item>
+        <Dropdown.Item href="#action3">HTML+CSS</Dropdown.Item>
+        <Dropdown.Item href="#action3">mySQL</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );

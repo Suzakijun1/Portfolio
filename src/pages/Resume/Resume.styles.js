@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const WorkSec = styled.div`
+export const ResumeSec = styled.div`
   color: white;
 `;
