@@ -10,6 +10,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-dark bg-dark">
       <NavbarContainer className="container-fluid">
+        <div className="navbar-brand">DYLAN YONG</div>
         <ul className="navbar-nav">
           <li className="nav-item">
             <a className="nav-link active" aria-current="page" href="#">
