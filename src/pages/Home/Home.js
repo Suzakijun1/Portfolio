@@ -1,6 +1,6 @@
 import { HomeSec } from "./Home.styles";
 import { HomeContainer } from "./Home.styles";
-import homeLogo from "../../Assets/coding-man-image.jpg";
+import homeLogo from "../../Assets/crop-pic-of-me2.jpg";
 import Type from "./Type";
 
 export default function Home() {

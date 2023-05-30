@@ -11,8 +11,10 @@ export const HomeSec = styled.div`
   img {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    width: 400px;
     /* height: 300px;
     width: 400px; */
   }

@@ -69,7 +69,7 @@ const Test = () => {
               default: "bounce",
             },
             random: false,
-            speed: 6,
+            speed: 1,
             straight: false,
           },
           number: {
@@ -77,7 +77,7 @@ const Test = () => {
               enable: true,
               area: 1200,
             },
-            value: 80,
+            value: 45,
           },
           opacity: {
             value: 0.5,
