@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { NavbarContainer } from "./Navbar.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
@@ -13,40 +14,30 @@ function Navbar() {
         <div className="navbar-brand">DYLAN YONG</div>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="#">
+            <Link to="/home" className="nav-link active" aria-current="page">
               <FontAwesomeIcon icon={faHouse} size="xs" />
               Home
-            </a>
+            </Link>
           </li>
+
           <li className="nav-item">
-            <a
-              className="nav-link active"
-              aria-current="page"
-              href="#aboutSection"
-            >
+            <Link to="/about" className="nav-link active" aria-current="page">
               <FontAwesomeIcon icon={faUser} size="xs" />
               About
-            </a>
+            </Link>
           </li>
+
           <li className="nav-item">
-            <a
-              className="nav-link active"
-              aria-current="page"
-              href="#workSection"
-            >
+            <Link to="/work" className="nav-link active" aria-current="page">
               <FontAwesomeIcon icon={faPen} size="xs" />
               Work
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a
-              className="nav-link active"
-              aria-current="page"
-              href="#contactSection"
-            >
+            <Link to="/contact" className="nav-link active" aria-current="page">
               <FontAwesomeIcon icon={faEnvelope} size="xs" />
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </NavbarContainer>

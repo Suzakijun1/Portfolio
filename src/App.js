@@ -2,6 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Particles from "./components/Particles/ParticlesBackground";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
@@ -11,15 +12,17 @@ import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 function App() {
   return (
-    <div>
+    <Router>
       <Particles />
       <Navbar />
-      <Home />
-      <About />
-      <Work />
-      <Contact />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/work" element={<Work />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 }
 
