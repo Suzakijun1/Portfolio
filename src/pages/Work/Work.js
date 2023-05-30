@@ -1,6 +1,6 @@
 import { WorkSec } from "./Work.styles";
 import BiteBud from "../../Assets/biteBud.png";
-import MyDropdown from "./Dropdown";
+import { MyDropdown, MyDropdown2 } from "./Dropdown";
 
 export default function Work() {
   return (
@@ -25,20 +25,23 @@ export default function Work() {
                   APIs to provide users with relevant information about nearby
                   restaurants and attractions.
                 </p>
-                <a
-                  href="https://suzakijun1.github.io/BiteBud/"
-                  target="_blank"
-                  className="btn btn-primary"
-                >
-                  View Project
-                </a>
-                <a
-                  href="https://github.com/Suzakijun1/BiteBud"
-                  target="_blank"
-                  className="btn btn-primary"
-                >
-                  View Github
-                </a>
+                <div className="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://suzakijun1.github.io/BiteBud/"
+                    target="_blank"
+                    className="btn btn-primary"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    href="https://github.com/Suzakijun1/BiteBud"
+                    target="_blank"
+                    className="btn btn-primary"
+                  >
+                    View Github
+                  </a>
+                  <MyDropdown />
+                </div>
               </div>
             </div>
           </div>
@@ -59,6 +62,7 @@ export default function Work() {
                 <a href="#" className="btn btn-primary">
                   View Project
                 </a>
+                <MyDropdown2 />
               </div>
             </div>
           </div>
