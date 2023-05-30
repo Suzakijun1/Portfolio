@@ -15,4 +15,10 @@ export const WorkSec = styled.div`
   .btn {
     background-color: #772e8b;
   }
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;

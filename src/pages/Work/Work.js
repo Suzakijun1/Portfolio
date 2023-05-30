@@ -4,8 +4,7 @@ import BiteBud from "../../Assets/biteBud.png";
 export default function Work() {
   return (
     <WorkSec id="workSection">
-      this is the work page
-      <h2 className="work-header">
+      <h2 className="work-header d-flex justify-content-center align-items-center">
         My Recent <strong className="purple">Works </strong>
       </h2>
       <p style={{ color: "white" }}>

@@ -8,4 +8,10 @@ export const NavbarContainer = styled.div`
     flex-direction: row;
     gap: 15px;
   }
+
+  #nav-item-dylan {
+    margin-right: auto;
+    justify-content: flex-start;
+    color: red;
+  }
 `;
