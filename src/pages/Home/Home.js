@@ -1,6 +1,6 @@
 import { HomeSec } from "./Home.styles";
-import { HomeContainer } from "./Home.styles";
 import homeLogo from "../../Assets/crop-pic-of-me2.jpg";
+import CodingManPic from "../../Assets/coding-man-image.jpg";
 import Type from "./Type";
 
 export default function Home() {
@@ -29,6 +29,14 @@ export default function Home() {
             <img src={homeLogo} alt="home" className="img-fluid custom-img" />
           </div>
         </div>
+      </div>
+
+      <div className="stacked-text">
+        <span>Learn</span>
+        <span>Build</span>
+        <span>Grow</span>
+        {/* <img src={CodingManPic} alt="about" className="img-fluid" /> */}
+        <div className="home-social">Find me on social media</div>
       </div>
     </HomeSec>
   );
