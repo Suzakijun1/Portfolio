@@ -7,7 +7,6 @@ export const HomeSec = styled.div`
     font-size: 60px;
     font-weight: 600;
     line-height: 1.5;
-    /* margin-left: 25px; */
   }
 
   .custom-img {
@@ -15,19 +14,16 @@ export const HomeSec = styled.div`
     border-radius: 50%;
     border: 5px solid black;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /* height: 300px;
-    width: 400px; */
     max-width: 100%;
     height: auto;
     max-height: 300px;
     width: auto;
-
-    /* height: 300px;
-    width: 400px; */
   }
   .home-btn {
     margin-top: 20px;
-    /* color: white; */
+    display: flex;
+    justify-content: center;
+    gap: 40px;
   }
   .stacked-text {
     display: flex;
@@ -67,5 +63,35 @@ export const HomeSec = styled.div`
       transform: translateY(0);
       opacity: 1;
     }
+  }
+  .cta-section {
+    /* background-color: #f1f1f1; */
+    padding: 40px;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+  }
+
+  .cta-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    color: #ffffff;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #ff5500;
   }
 `;
