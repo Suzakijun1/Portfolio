@@ -6,7 +6,7 @@ export default function Work() {
   return (
     <WorkSec id="workSection">
       <h2 className="work-header d-flex justify-content-center align-items-center">
-        My Recent <strong className="purple">Works </strong>
+        My Recent <strong className="purple"> Projects </strong>
       </h2>
       <p style={{ color: "white" }}>
         Here are a few projects I've worked on recently.

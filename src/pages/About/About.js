@@ -20,6 +20,13 @@ export default function About() {
             </p>
           </div>
         </div>
+        <div className="skills-content">
+          <h1>Skills</h1>
+          <p>
+            HTML, CSS, JavaScript, Node.js, Express.js, React.js, MongoDB,
+            MySQL, and more.
+          </p>
+        </div>
       </div>
     </AboutSec>
   );

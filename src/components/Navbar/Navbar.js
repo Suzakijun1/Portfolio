@@ -34,6 +34,12 @@ function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
+            <Link to="/resume" className="nav-link active" aria-current="page">
+              <FontAwesomeIcon icon={faUser} size="xs" />
+              Resume
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link to="/contact" className="nav-link active" aria-current="page">
               <FontAwesomeIcon icon={faEnvelope} size="xs" />
               Contact
