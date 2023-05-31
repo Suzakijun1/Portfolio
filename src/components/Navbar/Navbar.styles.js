@@ -2,10 +2,19 @@ import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
   justify-content: space-between !important;
+  font-size: larger;
   font-weight: bold;
+
   ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
+  }
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: cyan;
+  }
+  .navbar-nav .nav-link {
+    color: white;
   }
 `;

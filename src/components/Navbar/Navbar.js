@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { NavbarContainer } from "./Navbar.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
@@ -14,36 +14,61 @@ function Navbar() {
         <div className="navbar-brand">DYLAN YONG</div>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link to="/home" className="nav-link active" aria-current="page">
+            <NavLink
+              to="/home"
+              activeClassName="active"
+              className="nav-link"
+              aria-current="page"
+            >
               <FontAwesomeIcon icon={faHouse} size="xs" />
               Home
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/about" className="nav-link active" aria-current="page">
+            <NavLink
+              to="/about"
+              activeClassName="active"
+              className="nav-link"
+              aria-current="page"
+            >
               <FontAwesomeIcon icon={faUser} size="xs" />
               About
-            </Link>
+            </NavLink>
           </li>
 
           <li className="nav-item">
-            <Link to="/work" className="nav-link active" aria-current="page">
+            <NavLink
+              to="/work"
+              activeClassName="active"
+              className="nav-link"
+              aria-current="page"
+            >
               <FontAwesomeIcon icon={faPen} size="xs" />
               Work
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/resume" className="nav-link active" aria-current="page">
+            <NavLink
+              to="/resume"
+              activeClassName="active"
+              className="nav-link"
+              aria-current="page"
+            >
               <FontAwesomeIcon icon={faUser} size="xs" />
               Resume
-            </Link>
+            </NavLink>
           </li>
           <li className="nav-item">
-            <Link to="/contact" className="nav-link active" aria-current="page">
+            <NavLink
+              to="/contact"
+              activeClassName="active"
+              className="nav-link"
+              aria-current="page"
+            >
               <FontAwesomeIcon icon={faEnvelope} size="xs" />
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </NavbarContainer>
