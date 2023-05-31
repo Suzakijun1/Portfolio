@@ -2,6 +2,7 @@ import { HomeSec } from "./Home.styles";
 import homeLogo from "../../Assets/crop-pic-of-me2.jpg";
 import Type from "./Type";
 import { Link } from "react-router-dom";
+import vsCodePicture from "../../Assets/vs-coding-pic2.png";
 
 export default function Home() {
   return (
@@ -46,6 +47,13 @@ export default function Home() {
           <Link to="/contact" className="cta-button">
             Get In Touch
           </Link>
+        </section>
+        <section className="col-md-4">
+          <img
+            src={vsCodePicture}
+            alt="vs-code-pic"
+            className="img-fluid vs-code-pic"
+          />
         </section>
       </div>
     </HomeSec>
