@@ -32,10 +32,8 @@ export const HomeSec = styled.div`
   .stacked-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    /* opacity: 0; */
-    /* animation: fadeIn 2s ease-in-out; */
+    justify-content: space-between;
   }
   .stacked-text span {
     font-size: 60px;
@@ -44,11 +42,11 @@ export const HomeSec = styled.div`
     opacity: 0;
     font-family: "Arial", sans-serif;
     font-weight: bold;
-    /* animation: slideIn 1s ease-in-out; */
   }
 
   .stacked-text span:nth-child(1) {
     animation: slideIn 2.5s ease-in-out 0s forwards;
+    align-self: flex-start;
   }
 
   .stacked-text span:nth-child(2) {
@@ -57,18 +55,7 @@ export const HomeSec = styled.div`
 
   .stacked-text span:nth-child(3) {
     animation: slideIn 2.5s ease-in-out 4s forwards;
-  }
-  .stacked-text:hover span {
-    color: #ff6600;
-    transform: scale(1.1);
-  }
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+    align-self: flex-end;
   }
 
   @keyframes slideIn {

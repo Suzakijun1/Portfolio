@@ -31,7 +31,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="stacked-text">
+      <div className="stacked-text col-md-4">
         <span>Learn</span>
         <span>Build</span>
         <span>Grow</span>
