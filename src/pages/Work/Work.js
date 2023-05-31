@@ -19,11 +19,14 @@ export default function Work() {
               <div className="card-body">
                 <h5 className="card-title">BiteBud</h5>
                 <p className="card-text">
-                  Bite-Bud is a web application that allows users to search for
-                  local restaurants and attractions in any city and state of
-                  their choice. The application retrieves data from third-party
-                  APIs to provide users with relevant information about nearby
-                  restaurants and attractions.
+                  Bite-Bud is an innovative web application designed to enhance
+                  users' exploration of cities and states. By leveraging data
+                  from third-party APIs, this application enables users to
+                  effortlessly search and discover local restaurants and
+                  attractions in their desired locations. With real-time
+                  information, Bite-Bud empowers users to make informed
+                  decisions and embark on memorable experiences during their
+                  travels.
                 </p>
                 <div className="d-flex justify-content-between align-items-center">
                   <a
@@ -54,15 +57,23 @@ export default function Work() {
                 style={{ height: "200px", width: "200px" }}
               />
               <div className="card-body">
-                <h5 className="card-title">Project 2</h5>
+                <h5 className="card-title">Mental Oasis</h5>
                 <p className="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, quibusdam.
+                  Mental Oasis showcases a comprehensive mental health tracker
+                  that empowers users to take control of their well-being. With
+                  features such as medication intake tracking, inspirational
+                  quotes, a customizable calendar, journal entries, and links to
+                  helpline websites, the project aims to reduce the negative
+                  impact of mental health challenges. By combining these
+                  elements, the mental health tracker offers users a holistic
+                  tool to actively monitor and improve their mental well-being.
                 </p>
-                <a href="#" className="btn btn-primary">
-                  View Project
-                </a>
-                <MyDropdown2 />
+                <div className="d-flex justify-content-between align-items-center">
+                  <a href="#" className="btn btn-primary">
+                    View Project
+                  </a>
+                  <MyDropdown2 />
+                </div>
               </div>
             </div>
           </div>
