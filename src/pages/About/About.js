@@ -6,6 +6,13 @@ import jspic from "../../Assets/skills/js.png";
 import reactpic from "../../Assets/skills/react.png";
 import nodepic from "../../Assets/skills/nodejs.png";
 import mysqlpic from "../../Assets/skills/mysql.png";
+import gitpic from "../../Assets/skills/git.png";
+import mongopic from "../../Assets/skills/mongo-db.png";
+import vscodepic from "../../Assets/skills/vscode2.png";
+import expresspic from "../../Assets/skills/expressjs.png";
+import intelljpic from "../../Assets/skills/Intellij.png";
+import javapic from "../../Assets/skills/java.png";
+import heroku from "../../Assets/skills/heroku-pic.webp";
 
 export default function About() {
   return (
@@ -45,21 +52,52 @@ export default function About() {
               </div>
               <div className="skills-img">
                 JavaScript
-                <img src={jspic} alt="css" className="img-fluid" />
+                <img src={jspic} alt="javascript" className="img-fluid" />
               </div>
               <div className="skills-img">
-                React.js
-                <img src={reactpic} alt="css" className="img-fluid" />
+                Java
+                <img src={javapic} alt="java" className="img-fluid" />
               </div>
               <div className="skills-img">
-                React.js
-                <img src={nodepic} alt="css" className="img-fluid" />
+                MongoDB
+                <img src={mongopic} alt="mongodb" className="img-fluid" />
               </div>
               <h3> Frameworks & Technologies </h3>
               <div className="row justify-content-center">
                 <div className="skills-img">
+                  React.js
+                  <img src={reactpic} alt="css" className="img-fluid" />
+                </div>
+                <div className="skills-img">
+                  Node.js
+                  <img src={nodepic} alt="css" className="img-fluid" />
+                </div>
+                <div className="skills-img">
+                  Express.js
+                  <img src={expresspic} alt="css" className="img-fluid" />
+                </div>
+                <div className="skills-img">
                   MySQL
                   <img src={mysqlpic} alt="css" className="img-fluid" />
+                </div>
+                <h4>Tools & Platforms</h4>
+                <div className="row justify-content-center">
+                  <div className="skills-img">
+                    Git
+                    <img src={gitpic} alt="git" className="img-fluid" />
+                  </div>
+                  <div className="skills-img">
+                    VS Code
+                    <img src={vscodepic} alt="vscode" className="img-fluid" />
+                  </div>
+                  <div className="skills-img">
+                    IntelliJ
+                    <img src={intelljpic} alt="vscode" className="img-fluid" />
+                  </div>
+                  <div className="skills-img">
+                    Heroku
+                    <img src={heroku} alt="vscode" className="img-fluid" />
+                  </div>
                 </div>
               </div>
             </div>
