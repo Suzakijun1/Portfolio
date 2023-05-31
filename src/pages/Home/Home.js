@@ -1,6 +1,7 @@
 import { HomeSec } from "./Home.styles";
 import homeLogo from "../../Assets/crop-pic-of-me2.jpg";
 import Type from "./Type";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -11,18 +12,19 @@ export default function Home() {
             Hello, I'm <strong className="main-name">Dylan Yong</strong>
             <Type className="sub-content"></Type>
             <div className="home-btn">
-              <a
-                href="#"
+              <Link
+                to="/work"
                 className="btn btn-outline border btn-primary bg-gradient"
+                aria-current="page"
               >
                 Check out my work!
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                to="/resume"
                 className="btn btn-outline border btn-primary bg-gradient"
               >
                 View my Resume!
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -41,9 +43,9 @@ export default function Home() {
         <section className="cta-section col-md-4">
           <h2>Lets Get to Work!</h2>
           <p>I am available for freelance work and collaborations.</p>
-          <a href="mailto:your-email@example.com" className="cta-button">
+          <Link to="/contact" className="cta-button">
             Get In Touch
-          </a>
+          </Link>
         </section>
       </div>
     </HomeSec>
