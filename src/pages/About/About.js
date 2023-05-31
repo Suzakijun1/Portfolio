@@ -1,5 +1,11 @@
 import { AboutSec } from "./About.styles";
 import AboutLogo from "../../Assets/WebDevelopmentBanner.webp";
+import htmlpic from "../../Assets/skills/html.png";
+import csspic from "../../Assets/skills/css.png";
+import jspic from "../../Assets/skills/js.png";
+import reactpic from "../../Assets/skills/react.png";
+import nodepic from "../../Assets/skills/nodejs.png";
+import mysqlpic from "../../Assets/skills/mysql.png";
 
 export default function About() {
   return (
@@ -22,10 +28,38 @@ export default function About() {
         </div>
         <div className="skills-content">
           <h1>Skills</h1>
-          <p>
-            HTML, CSS, JavaScript, Node.js, Express.js, React.js, MongoDB,
-            MySQL, and more.
-          </p>
+          <div className="container-fluid text-center">
+            <h2> Languages & Databases </h2>
+            <div className="row justify-content-center">
+              <div className="skills-img ">
+                HTML
+                <img src={htmlpic} alt="html" className="img-fluid" />
+              </div>
+              <div className="skills-img">
+                CSS
+                <img src={csspic} alt="css" className="img-fluid" />
+              </div>
+              <div className="skills-img">
+                JavaScript
+                <img src={jspic} alt="css" className="img-fluid" />
+              </div>
+              <div className="skills-img">
+                React.js
+                <img src={reactpic} alt="css" className="img-fluid" />
+              </div>
+              <div className="skills-img">
+                React.js
+                <img src={nodepic} alt="css" className="img-fluid" />
+              </div>
+              <h3> Frameworks & Technologies </h3>
+              <div className="row justify-content-center">
+                <div className="skills-img">
+                  MySQL
+                  <img src={mysqlpic} alt="css" className="img-fluid" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </AboutSec>
