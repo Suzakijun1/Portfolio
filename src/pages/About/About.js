@@ -18,11 +18,15 @@ export default function About() {
           <div className="about-content">
             <h1>About Me</h1>
             <p>
-              I am a full-stack web developer with a passion for learning and
-              creating. I am currently enrolled in the University of Central
-              Florida Coding Bootcamp. I am proficient in HTML, CSS, JavaScript,
-              Node.js, Express.js, React.js, MongoDB, MySQL, and more. I am a
-              hard worker with a strong work ethic and a desire to learn.
+              I am a full-stack web developer with a 8+ years of diverse college
+              educations and a passion for learning. I graduated from University
+              of South Florida with a Bachelors of Science in 'Integrative
+              Animal biology' and Information Studies with a concentration in
+              Information security. I recently graduated from the University of
+              Central Florida Coding Bootcamp. I am proficient in HTML, CSS,
+              JavaScript, Node.js, Express.js, React.js, MongoDB, MySQL, and
+              more. I am a hard worker with a strong work ethic and a desire to
+              learn.
             </p>
           </div>
         </div>
