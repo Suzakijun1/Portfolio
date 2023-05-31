@@ -1,5 +1,6 @@
 import { WorkSec } from "./Work.styles";
 import BiteBud from "../../Assets/biteBud.png";
+import MentalOasis from "../../Assets/mental-oasis-picture.png";
 import { MyDropdown, MyDropdown2 } from "./Dropdown";
 
 export default function Work() {
@@ -50,12 +51,7 @@ export default function Work() {
           </div>
           <div className="col-md-4">
             <div className="card">
-              <img
-                src=""
-                className="card-img-top"
-                alt="project"
-                style={{ height: "200px", width: "200px" }}
-              />
+              <img src={MentalOasis} className="card-img-top" alt="project" />
               <div className="card-body">
                 <h5 className="card-title">Mental Oasis</h5>
                 <p className="card-text">
