@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const AboutSec = styled.div`
   color: white;
-  padding-left: 125px;
-  padding-right: 125px;
+  padding-left: 150px;
+  padding-right: 150px;
 
   h1 {
     display: flex;
@@ -15,7 +15,8 @@ export const AboutSec = styled.div`
   }
 
   .about-img {
-    height: 400px;
+    height: 300px;
+    margin-top: 110px;
     width: 1500px;
   }
   .skills-img {

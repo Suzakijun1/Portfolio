@@ -10,7 +10,7 @@ export const HomeSec = styled.div`
     /* margin-left: 25px; */
   }
 
-  img {
+  .custom-img {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     border: 5px solid black;
