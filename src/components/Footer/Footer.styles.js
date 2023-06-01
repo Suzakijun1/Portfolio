@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.div`
-  /* background-color: grey; */
   color: white;
   .navbar-brand {
     margin-right: 2rem;

@@ -74,7 +74,6 @@ export const HomeSec = styled.div`
     }
   }
   .cta-section {
-    /* background-color: #f1f1f1; */
     padding: 40px;
     text-align: center;
   }
