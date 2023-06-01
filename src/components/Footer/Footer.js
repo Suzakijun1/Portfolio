@@ -8,7 +8,7 @@ function Footer() {
   return (
     <nav className="navbar fixed-bottom d-flex justify-content-center">
       <FooterContainer className="container-fluid justify-content-center">
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="https://github.com/Suzakijun1">
           <FontAwesomeIcon icon={faGithub} size="lg" />
           Github
         </a>
