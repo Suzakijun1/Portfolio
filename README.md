@@ -2,7 +2,7 @@
 
 Welcome to my React Portfolio! <br>
 
-<a href="hhttps://portfolio-react-iota-six.vercel.app/home" target="_blank">Portfolio Link</a>
+Here is a link to the demo! [portfolio](https://portfolio-react-iota-six.vercel.app/home)
 
 ## Description
 
