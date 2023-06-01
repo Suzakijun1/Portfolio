@@ -8,6 +8,10 @@ Here is a link to the demo! [portfolio](https://portfolio-react-iota-six.vercel.
 
 In summary, my React portfolio, crafted with the powerful combination of React and Bootstrap, not only highlights my technical proficiency but also showcases my dedication to creating visually striking and user-friendly experiences. I invite you to explore and be inspired by the projects I have brought to life.
 
+## Screenshot
+
+![portfolio](/src/Assets/portfolio-image.png)
+
 ## Technologies Used
 
 - React.js
