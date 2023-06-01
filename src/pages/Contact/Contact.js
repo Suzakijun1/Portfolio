@@ -3,6 +3,41 @@ import { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
 export default function Contact() {
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const { name, email, message } = formState;
+
+  function handleChange(e) {
+    if (e.target.name === "email") {
+      const isValid = validateEmail(e.target.value);
+
+      if (!isValid) {
+        setErrorMessage("please enter a valid email");
+      } else {
+        setErrorMessage("");
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage("");
+      }
+    }
+
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
   return (
     <ContactSec className="contact-section container-fluid d-flex justify-content-center align-items-center">
       <div className="col-md-4">
@@ -10,33 +45,48 @@ export default function Contact() {
           <h1>Contact Me</h1>
           <form className="form">
             <div className="form-group">
-              <label for="name">Name:</label>
+              <label htmlFor="name">Name:</label>
               <input
                 type="text"
                 className="form-control"
                 placeholder="Enter name"
                 name="name"
+                defaultValue={name}
+                onBlur={handleChange}
               />
             </div>
             <div className="form-group">
-              <label for="email">Email:</label>
+              <label htmlFor="email">Email:</label>
               <input
                 type="email"
                 className="form-control"
                 placeholder="Enter email"
                 name="email"
+                defaultValue={email}
+                onBlur={handleChange}
               />
             </div>
             <div className="form-group">
-              <label for="message">Message:</label>
+              <label htmlFor="message">Message:</label>
               <textarea
                 className="form-control"
                 rows="5"
                 placeholder="Enter message"
                 name="message"
+                defaultValue={message}
+                onBlur={handleChange}
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">
+            {errorMessage && (
+              <div>
+                <p className="error-text">{errorMessage}</p>
+              </div>
+            )}
+            <button
+              type="submit"
+              className="btn btn-primary"
+              onSubmit={handleSubmit}
+            >
               Submit
             </button>
           </form>

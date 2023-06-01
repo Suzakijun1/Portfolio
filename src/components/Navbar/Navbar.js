@@ -16,7 +16,7 @@ function Navbar() {
           <li className="nav-item">
             <NavLink
               to="/home"
-              activeClassName="active"
+              activeclassname="active"
               className="nav-link"
               aria-current="page"
             >
@@ -28,7 +28,7 @@ function Navbar() {
           <li className="nav-item">
             <NavLink
               to="/about"
-              activeClassName="active"
+              activeclassname="active"
               className="nav-link"
               aria-current="page"
             >
@@ -40,7 +40,7 @@ function Navbar() {
           <li className="nav-item">
             <NavLink
               to="/work"
-              activeClassName="active"
+              activeclassname="active"
               className="nav-link"
               aria-current="page"
             >
@@ -51,7 +51,7 @@ function Navbar() {
           <li className="nav-item">
             <NavLink
               to="/resume"
-              activeClassName="active"
+              activeclassname="active"
               className="nav-link"
               aria-current="page"
             >
@@ -62,7 +62,7 @@ function Navbar() {
           <li className="nav-item">
             <NavLink
               to="/contact"
-              activeClassName="active"
+              activeclassname="active"
               className="nav-link"
               aria-current="page"
             >
