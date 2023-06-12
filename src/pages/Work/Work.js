@@ -68,6 +68,13 @@ export default function Work() {
                   <a href="#" className="btn btn-primary">
                     View Project
                   </a>
+                  <a
+                    href="https://github.com/DavidPeguero/Mental-Oasis"
+                    target="_blank"
+                    className="btn btn-primary"
+                  >
+                    View Github
+                  </a>
                   <MyDropdown2 />
                 </div>
               </div>
@@ -82,15 +89,32 @@ export default function Work() {
                 style={{ height: "200px", width: "200px" }}
               />
               <div className="card-body">
-                <h5 className="card-title">Project 3</h5>
+                <h5 className="card-title">Superhero Showdown</h5>
                 <p className="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptatum, quibusdam.
+                  Superhero Showdown is an interactive web game with two modes:
+                  "Higher Lower" and "Draft Game". In "Draft Game", players
+                  strategically build teams and engage in turn-based battles. In
+                  "Higher Lower", players compare and choose attributes. Game
+                  stats are tracked and stored using MongoDB, viewable in user
+                  profiles.
                 </p>
-                <a href="#" className="btn btn-primary">
-                  View Project
-                </a>
-                <MyDropdown />
+                <div className="d-flex justify-content-between align-items-center">
+                  <a
+                    href="https://hero-showdown.herokuapp.com/"
+                    target="_blank"
+                    className="btn btn-primary"
+                  >
+                    View Project
+                  </a>
+                  <a
+                    href="https://github.com/Suzakijun1/Higher-Lower-Game"
+                    target="_blank"
+                    className="btn btn-primary"
+                  >
+                    View Github
+                  </a>
+                  <MyDropdown />
+                </div>
               </div>
             </div>
           </div>
