@@ -15,6 +15,18 @@ import javapic from "../../Assets/skills/java.png";
 import heroku from "../../Assets/skills/heroku-pic.webp";
 
 export default function About() {
+  const projects = [
+    {
+      title: "Project 1",
+      description: "This is a description of project 1",
+      imageUrl: "https://via.placeholder.com/150",
+    },
+    {
+      title: "Project 2",
+      description: "This is a description of project 2",
+      imageUrl: "https://via.placeholder.com/150",
+    },
+  ];
   return (
     <AboutSec className="about-section container-fluid">
       <div className="row">

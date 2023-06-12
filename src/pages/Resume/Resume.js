@@ -1,5 +1,5 @@
 import { ResumeSec } from "./Resume.styles";
-import Resume from "../../Assets/Dylan's Resume 41024_1.jpg";
+import Resume from "../../Assets/Dylan_Resume_Update2.jpg";
 
 export default function Home() {
   return (
