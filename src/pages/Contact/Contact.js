@@ -51,6 +51,7 @@ export default function Contact() {
                 className="form-control"
                 placeholder="Enter name"
                 name="name"
+                id="name"
                 defaultValue={name}
                 onBlur={handleChange}
               />
@@ -62,6 +63,7 @@ export default function Contact() {
                 className="form-control"
                 placeholder="Enter email"
                 name="email"
+                id="email"
                 defaultValue={email}
                 onBlur={handleChange}
               />
@@ -73,6 +75,7 @@ export default function Contact() {
                 rows="5"
                 placeholder="Enter message"
                 name="message"
+                id="message"
                 defaultValue={message}
                 onBlur={handleChange}
               ></textarea>

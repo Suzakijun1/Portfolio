@@ -13,20 +13,9 @@ import expresspic from "../../Assets/skills/expressjs.png";
 import intelljpic from "../../Assets/skills/Intellij.png";
 import javapic from "../../Assets/skills/java.png";
 import heroku from "../../Assets/skills/heroku-pic.webp";
-
+import apollopic from "../../Assets/skills/apolloimage.png";
+import jquerypic from "../../Assets/skills/jqueryimg.png";
 export default function About() {
-  const projects = [
-    {
-      title: "Project 1",
-      description: "This is a description of project 1",
-      imageUrl: "https://via.placeholder.com/150",
-    },
-    {
-      title: "Project 2",
-      description: "This is a description of project 2",
-      imageUrl: "https://via.placeholder.com/150",
-    },
-  ];
   return (
     <AboutSec className="about-section container-fluid">
       <div className="row">
@@ -36,17 +25,37 @@ export default function About() {
           </div>
           <div className="about-content">
             <h1>About Me</h1>
-            <p>
-              I am a 26 year old full-stack web developer located in Orlando,
-              Florida with a 8+ years of diverse college educations and a
-              passion for learning. I graduated from University of South Florida
-              with a Bachelors of Science in 'Integrative Animal biology' and
-              Information Studies with a concentration in Information security.
-              I recently graduated from the University of Central Florida Coding
-              Bootcamp. I am proficient in HTML, CSS, JavaScript, Node.js,
-              Express.js, React.js, MongoDB, MySQL, and more. I am a hard worker
-              with a strong work ethic and a desire to learn.
-            </p>
+            <ul>
+              <li>
+                I am a 26 year old{" "}
+                <span className="underline">full-stack developer</span> with{" "}
+                <strong>dual bachelor's degree</strong> based in Orlando,
+                Florida. With over 8 years of extensive college education in
+                diverse fields, I have cultivated a strong passion for learning.
+              </li>
+              <li className="blue-item">
+                In 2020, I <strong>graduated</strong> from{" "}
+                <span className="underline">University of South Florida</span>{" "}
+                with a <strong>Bachelors of Science</strong> in{" "}
+                <strong>"Integrative Animal biology"</strong>.
+              </li>
+              <li>
+                In 2022, I graduated from the{" "}
+                <span className="underline">University of South Florida</span>{" "}
+                with a <strong>Bachelors of Science</strong> in{" "}
+                <strong>"Information Science"</strong> with a concentration in{" "}
+                <strong>"Information Security"</strong>.
+              </li>
+              <li className="test">
+                In 2023, I graduated from the{" "}
+                <span className="underline">University of Central Florida</span>{" "}
+                Coding Bootcamp.
+              </li>
+              <li>
+                I am <strong>proficient</strong> in HTML, CSS, JavaScript,
+                Node.js, Express.js, React.js, MongoDB, MySQL, and more.
+              </li>
+            </ul>
           </div>
         </div>
         <div className="skills-content">
@@ -74,6 +83,10 @@ export default function About() {
                 MongoDB
                 <img src={mongopic} alt="mongodb" className="img-fluid" />
               </div>
+              <div className="skills-img">
+                MySQL
+                <img src={mysqlpic} alt="css" className="img-fluid" />
+              </div>
               <h3> Frameworks & Technologies </h3>
               <div className="row justify-content-center">
                 <div className="skills-img">
@@ -89,9 +102,14 @@ export default function About() {
                   <img src={expresspic} alt="css" className="img-fluid" />
                 </div>
                 <div className="skills-img">
-                  MySQL
-                  <img src={mysqlpic} alt="css" className="img-fluid" />
+                  Apollo
+                  <img src={apollopic} alt="css" className="img-fluid" />
                 </div>
+                <div className="skills-img">
+                  jQuery
+                  <img src={jquerypic} alt="css" className="img-fluid" />
+                </div>
+
                 <h4>Tools & Platforms</h4>
                 <div className="row justify-content-center">
                   <div className="skills-img">
