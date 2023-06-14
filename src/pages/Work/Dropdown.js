@@ -30,9 +30,29 @@ function MyDropdown2() {
         <Dropdown.Item href="#action2">Express.JS</Dropdown.Item>
         <Dropdown.Item href="#action3">HTML+CSS</Dropdown.Item>
         <Dropdown.Item href="#action3">mySQL</Dropdown.Item>
+        <Dropdown.Item href="#action3">Node.JS</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
 }
 
-export { MyDropdown, MyDropdown2 };
+function MyDropdown3() {
+  return (
+    <Dropdown>
+      <Dropdown.Toggle variant="primary" id="dropdown-basic">
+        Technologies Used
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu>
+        <Dropdown.Item href="#action1">React</Dropdown.Item>
+        <Dropdown.Item href="#action2">Node.js</Dropdown.Item>
+        <Dropdown.Item href="#action3">Express.js</Dropdown.Item>
+        <Dropdown.Item href="#action3">MongoDB</Dropdown.Item>
+        <Dropdown.Item href="#action3">GraphQL</Dropdown.Item>
+        <Dropdown.Item href="#action3">Heroku</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  );
+}
+
+export { MyDropdown, MyDropdown2, MyDropdown3 };
