@@ -8,14 +8,14 @@ export default function Home() {
         <h1 className="main-name">Resume</h1>
         <div>
           <a
-            href="https://github.com/Suzakijun1/Portfolio/blob/main/Dylan's%20Resume%20Updated.pdf"
+            href={Resume}
             download="Dylan_Resume.pdf"
             style={{ fontWeight: "bold", fontSize: "1.5rem" }}
           >
             Download Resume
           </a>
         </div>
-        <img src={Resume} alt="resume" className="img-fluid custom-img" />
+        <img src={Resume} alt="resume" />
       </div>
     </ResumeSec>
   );
