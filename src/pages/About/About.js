@@ -16,6 +16,28 @@ import heroku from "../../Assets/skills/heroku-pic.webp";
 import apollopic from "../../Assets/skills/apolloimage.png";
 import jquerypic from "../../Assets/skills/jqueryimg.png";
 export default function About() {
+  const languagesAndDatabases = [
+    { name: "HTML", image: htmlpic },
+    { name: "CSS", image: csspic },
+    { name: "JavaScript", image: jspic },
+    { name: "Java", image: javapic },
+    { name: "MongoDB", image: mongopic },
+    { name: "MySQL", image: mysqlpic },
+  ];
+  const frameworksAndTechnologies = [
+    { name: "React.js", image: reactpic },
+    { name: "Node.js", image: nodepic },
+    { name: "Express.js", image: expresspic },
+    { name: "Apollo", image: apollopic },
+    { name: "jQuery", image: jquerypic },
+  ];
+  const toolsAndPlatforms = [
+    { name: "Git", image: gitpic },
+    { name: "VS Code", image: vscodepic },
+    { name: "IntelliJ", image: intelljpic },
+    { name: "Heroku", image: heroku },
+  ];
+
   return (
     <AboutSec className="about-section container-fluid">
       <div className="row">
@@ -63,73 +85,40 @@ export default function About() {
           <div className="container-fluid text-center">
             <h2> Languages & Databases </h2>
             <div className="row justify-content-center">
-              <div className="skills-img ">
-                HTML
-                <img src={htmlpic} alt="html" className="img-fluid" />
-              </div>
-              <div className="skills-img">
-                CSS
-                <img src={csspic} alt="css" className="img-fluid" />
-              </div>
-              <div className="skills-img">
-                JavaScript
-                <img src={jspic} alt="javascript" className="img-fluid" />
-              </div>
-              <div className="skills-img">
-                Java
-                <img src={javapic} alt="java" className="img-fluid" />
-              </div>
-              <div className="skills-img">
-                MongoDB
-                <img src={mongopic} alt="mongodb" className="img-fluid" />
-              </div>
-              <div className="skills-img">
-                MySQL
-                <img src={mysqlpic} alt="css" className="img-fluid" />
-              </div>
-              <h3> Frameworks & Technologies </h3>
-              <div className="row justify-content-center">
-                <div className="skills-img">
-                  React.js
-                  <img src={reactpic} alt="css" className="img-fluid" />
+              {languagesAndDatabases.map((skill, index) => (
+                <div className="skills-img" key={index}>
+                  {skill.name}
+                  <img
+                    src={skill.image}
+                    alt={skill.name}
+                    className="img-fluid"
+                  />
                 </div>
-                <div className="skills-img">
-                  Node.js
-                  <img src={nodepic} alt="css" className="img-fluid" />
-                </div>
-                <div className="skills-img">
-                  Express.js
-                  <img src={expresspic} alt="css" className="img-fluid" />
-                </div>
-                <div className="skills-img">
-                  Apollo
-                  <img src={apollopic} alt="css" className="img-fluid" />
-                </div>
-                <div className="skills-img">
-                  jQuery
-                  <img src={jquerypic} alt="css" className="img-fluid" />
-                </div>
+              ))}
+            </div>
 
-                <h4>Tools & Platforms</h4>
-                <div className="row justify-content-center">
-                  <div className="skills-img">
-                    Git
-                    <img src={gitpic} alt="git" className="img-fluid" />
-                  </div>
-                  <div className="skills-img">
-                    VS Code
-                    <img src={vscodepic} alt="vscode" className="img-fluid" />
-                  </div>
-                  <div className="skills-img">
-                    IntelliJ
-                    <img src={intelljpic} alt="vscode" className="img-fluid" />
-                  </div>
-                  <div className="skills-img">
-                    Heroku
-                    <img src={heroku} alt="vscode" className="img-fluid" />
-                  </div>
+            <h3> Frameworks & Technologies </h3>
+            <div className="row justify-content-center">
+              {frameworksAndTechnologies.map((skill, index) => (
+                <div className="skills-img" key={index}>
+                  {skill.name}
+                  <img
+                    src={skill.image}
+                    alt={skill.name}
+                    className="img-fluid"
+                  />
                 </div>
-              </div>
+              ))}
+            </div>
+
+            <h4>Tools & Platforms</h4>
+            <div className="row justify-content-center">
+              {toolsAndPlatforms.map((tool, index) => (
+                <div className="skills-img" key={index}>
+                  {tool.name}
+                  <img src={tool.image} alt={tool.name} className="img-fluid" />
+                </div>
+              ))}
             </div>
           </div>
         </div>
