@@ -10,6 +10,8 @@ import Work from "./pages/Work/Work";
 import Contact from "./pages/Contact/Contact";
 import Resume from "./pages/Resume/Resume";
 import Footer from "./components/Footer/Footer";
+import config from "react-reveal/globals";
+config({ ssrFadeout: true });
 function App() {
   return (
     <Router>

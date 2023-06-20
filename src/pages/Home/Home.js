@@ -7,7 +7,7 @@ import vsCodePicture from "../../Assets/vs-coding-pic2.png";
 export default function Home() {
   return (
     <HomeSec className="home-section container-fluid mt-5">
-      <div className="row ms-5">
+      <div className="row">
         <div className="col-md-6 text-center">
           <div className="home-content">
             Hello, I'm <strong className="main-name">Dylan Yong</strong>

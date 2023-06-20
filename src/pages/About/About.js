@@ -15,6 +15,8 @@ import javapic from "../../Assets/skills/java.png";
 import heroku from "../../Assets/skills/heroku-pic.webp";
 import apollopic from "../../Assets/skills/apolloimage.png";
 import jquerypic from "../../Assets/skills/jqueryimg.png";
+import EducationCard from "../../components/EducationCard/EducationCard";
+
 export default function About() {
   const languagesAndDatabases = [
     { name: "HTML", image: htmlpic },
@@ -41,6 +43,7 @@ export default function About() {
   return (
     <AboutSec className="about-section container-fluid">
       <div className="row">
+        <EducationCard />
         <div className="d-flex align-items-center">
           <div className="about-img">
             <img src={AboutLogo} alt="about" className="img-fluid" />

@@ -17,4 +17,12 @@ export const NavbarContainer = styled.div`
   .navbar-nav .nav-link {
     color: white;
   }
+  @media (max-width: 768px) {
+    /* Adjust the height for smaller screens */
+    /* height: 60px; */
+
+    ul {
+      gap: 10px;
+    }
+  }
 `;
