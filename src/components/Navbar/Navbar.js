@@ -1,79 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { NavbarContainer } from "./Navbar.styles";
+import { Navbar, Nav } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faPen } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHouse,
+  faUser,
+  faEnvelope,
+  faPen,
+} from "@fortawesome/free-solid-svg-icons";
 
-function Navbar() {
+function CustomNavbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
-    <nav className="navbar navbar-dark bg-dark">
-      <NavbarContainer className="container-fluid">
-        <div className="navbar-brand">DYLAN YONG</div>
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <NavLink
-              to="/home"
-              activeclassname="active"
-              className="nav-link"
-              aria-current="page"
-            >
-              <FontAwesomeIcon icon={faHouse} size="xs" />
-              Home
-            </NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink
-              to="/about"
-              activeclassname="active"
-              className="nav-link"
-              aria-current="page"
-            >
-              <FontAwesomeIcon icon={faUser} size="xs" />
-              About
-            </NavLink>
-          </li>
-
-          <li className="nav-item">
-            <NavLink
-              to="/work"
-              activeclassname="active"
-              className="nav-link"
-              aria-current="page"
-            >
-              <FontAwesomeIcon icon={faPen} size="xs" />
-              Work
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to="/resume"
-              activeclassname="active"
-              className="nav-link"
-              aria-current="page"
-            >
-              <FontAwesomeIcon icon={faUser} size="xs" />
-              Resume
-            </NavLink>
-          </li>
-          <li className="nav-item">
-            <NavLink
-              to="/contact"
-              activeclassname="active"
-              className="nav-link"
-              aria-current="page"
-            >
-              <FontAwesomeIcon icon={faEnvelope} size="xs" />
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-      </NavbarContainer>
-    </nav>
+    <Navbar bg="dark" variant="dark" expand="md">
+      <Navbar.Brand>DYLAN YONG</Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbar-nav" onClick={handleMenuToggle} />
+      <Navbar.Collapse
+        id="navbar-nav"
+        className={isMenuOpen ? "show" : ""}
+        style={{ flexDirection: "row-reverse" }}
+      >
+        <Nav className="ml-auto">
+          <Nav.Link as={NavLink} to="/home" activeclassname="active">
+            <FontAwesomeIcon icon={faHouse} size="xs" /> Home
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/about" activeclassname="active">
+            <FontAwesomeIcon icon={faUser} size="xs" /> About
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/work" activeclassname="active">
+            <FontAwesomeIcon icon={faPen} size="xs" /> Work
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/resume" activeclassname="active">
+            <FontAwesomeIcon icon={faUser} size="xs" /> Resume
+          </Nav.Link>
+          <Nav.Link as={NavLink} to="/contact" activeclassname="active">
+            <FontAwesomeIcon icon={faEnvelope} size="xs" /> Contact
+          </Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default CustomNavbar;

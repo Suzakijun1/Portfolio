@@ -41,7 +41,12 @@ const EducationCard = () => {
         <Card.Text>
           <strong>Facts and Statistics:</strong>
           <br />
-          Insert your facts and statistics here.
+          ⦿ Strong foundation in the biological sciences, including genetics,
+          cell biology, and physiology.
+          <br />
+          ⦿ Over 120 degree hours of coursework, including 30 hours of upper
+          level biology courses.
+          <br />⦿ 3.0 GPA
         </Card.Text>
       </Card.Body>
     </StyledCard>
