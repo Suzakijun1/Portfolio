@@ -1,6 +1,6 @@
 import { ResumeSec } from "./Resume.styles";
-import Resume from "../../Assets/Dylan Yong Resume.pdf";
-import Resume1 from "../../Assets/Dylan Yong Resume-1.png";
+import Resume from "../../Assets/Dylan Yong's Resume.pdf";
+import Resume1 from "../../Assets/Dylan Yong's Resume-1.png";
 import Fade from "react-reveal/Fade";
 import React, { useState, useEffect } from "react";
 
