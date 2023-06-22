@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const WorkSec = styled.div`
   @media (max-width: 767px) {
     .col-md-4 {
-      margin-bottom: 20px; /* Adjust the value as per your preference */
+      margin-bottom: 20px;
     }
   }
   color: white;
