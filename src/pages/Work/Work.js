@@ -48,57 +48,6 @@ export default function Work() {
     },
   ];
 
-  //   return (
-  //     <WorkSec id="workSection">
-  //       <Zoom duration={2000} distance="40px">
-  //         <h2 className="work-header d-flex justify-content-center align-items-center">
-  //           My Recent&nbsp;<strong className="purple"> Projects </strong>
-  //         </h2>
-  //         <p style={{ color: "white" }}>
-  //           Here are a few projects I've worked on recently.
-  //         </p>
-  //         <div className="d-flex justify-content-center align-items-center">
-  //           <div className="row">
-  //             {projects.map((project, index) => (
-  //               <div className="col-md-4" key={index}>
-  //                 <div className="card">
-  //                   <img
-  //                     src={project.image}
-  //                     className="card-img-top"
-  //                     alt="project"
-  //                   />
-  //                   <div className="card-body">
-  //                     <h5 className="card-title">{project.title}</h5>
-  //                     <p className="card-text">{project.description}</p>
-  //                     <div className="d-flex justify-content-between align-items-center">
-  //                       <a
-  //                         href={project.projectLink}
-  //                         target="_blank"
-  //                         rel="noopener noreferrer"
-  //                         className="btn btn-primary"
-  //                       >
-  //                         View Project
-  //                       </a>
-  //                       <a
-  //                         href={project.githubLink}
-  //                         target="_blank"
-  //                         rel="noopener noreferrer"
-  //                         className="btn btn-primary"
-  //                       >
-  //                         View Github
-  //                       </a>
-  //                       {project.dropdownComponent}
-  //                     </div>
-  //                   </div>
-  //                 </div>
-  //               </div>
-  //             ))}
-  //           </div>
-  //         </div>
-  //       </Zoom>
-  //     </WorkSec>
-  //   );
-  // }
   return (
     <WorkSec id="workSection">
       <Zoom duration={2000} distance="40px">
