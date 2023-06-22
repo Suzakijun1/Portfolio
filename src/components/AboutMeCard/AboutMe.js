@@ -13,6 +13,9 @@ const CardContainer = styled.div`
 const CardContent = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const ProfileImage = styled(Image)`
