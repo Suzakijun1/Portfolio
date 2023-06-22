@@ -25,7 +25,7 @@ function CustomNavbar() {
         className={isMenuOpen ? "show" : ""}
         style={{ flexDirection: "row-reverse" }}
       >
-        <Nav className="ml-auto">
+        <Nav className={`ml-auto ${isMenuOpen ? "text-center" : ""}`}>
           <Nav.Link as={NavLink} to="/home" activeclassname="active">
             <FontAwesomeIcon icon={faHouse} size="xs" /> Home
           </Nav.Link>
