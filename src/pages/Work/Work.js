@@ -30,7 +30,7 @@ export default function Work() {
               <div className="card d-flex justify-content-center align-items-center">
                 <img src={BiteBud} className="card-img-top" alt="project" />
                 <div className="card-body">
-                  <h5 className="card-title">BiteBud</h5>
+                  <h5 className="card-title">BiteBud (Requires New API Key)</h5>
                   <p className="card-text">
                     Bite-Bud is an innovative web application designed to
                     enhance users' exploration of cities and states. By

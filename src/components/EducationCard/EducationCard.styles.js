@@ -1,12 +1,15 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 export const StyledCard = styled.div`
+  .underline {
+    text-decoration: underline;
+  }
   border: 1px solid #ccc;
   text-align: center;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-
+  background-color: #2c3539;
   padding: 20px;
   transition: box-shadow 0.3s ease;
 
@@ -48,16 +51,18 @@ export const EducationInfo = styled.div`
   align-items: center;
   justify-content: center;
 `;
-
-// Create a keyframe animation
 const spinAnimation = keyframes`
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
 `;
 export const SpinningLogoImage = styled(LogoImage)`
-  animation: ${spinAnimation} 5s linear infinite; // Apply the spinning animation
+  transition: transform 0.3s ease;
+
+  ${StyledCard}:hover & {
+    animation: ${spinAnimation} 8s linear infinite;
+  }
 `;

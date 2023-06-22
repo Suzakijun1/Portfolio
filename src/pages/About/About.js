@@ -1,5 +1,4 @@
 import { AboutSec } from "./About.styles";
-import AboutLogo from "../../Assets/WebDevelopmentBanner.webp";
 import htmlpic from "../../Assets/skills/html.png";
 import csspic from "../../Assets/skills/css.png";
 import jspic from "../../Assets/skills/js.png";
@@ -16,6 +15,7 @@ import heroku from "../../Assets/skills/heroku-pic.webp";
 import apollopic from "../../Assets/skills/apolloimage.png";
 import jquerypic from "../../Assets/skills/jqueryimg.png";
 import EducationCard from "../../components/EducationCard/EducationCard";
+import AboutMeCard from "../../components/AboutMeCard/AboutMe";
 
 export default function About() {
   const languagesAndDatabases = [
@@ -42,46 +42,12 @@ export default function About() {
 
   return (
     <AboutSec className="about-section container-fluid">
-      <div className="row">
-        <EducationCard />
-        <div className="d-flex align-items-center">
-          <div className="about-img">
-            <img src={AboutLogo} alt="about" className="img-fluid" />
-          </div>
-          <div className="about-content">
-            <h1>About Me</h1>
-            <ul>
-              <li>
-                I am a 26 year old{" "}
-                <span className="underline">full-stack developer</span> with{" "}
-                <strong>dual bachelor's degree</strong> based in Orlando,
-                Florida. With over 8 years of extensive college education in
-                diverse fields, I have cultivated a strong passion for learning.
-              </li>
-              <li className="blue-item">
-                In 2020, I <strong>graduated</strong> from{" "}
-                <span className="underline">University of South Florida</span>{" "}
-                with a <strong>Bachelors of Science</strong> in{" "}
-                <strong>"Integrative Animal biology"</strong>.
-              </li>
-              <li>
-                In 2022, I graduated from the{" "}
-                <span className="underline">University of South Florida</span>{" "}
-                with a <strong>Bachelors of Science</strong> in{" "}
-                <strong>"Information Science"</strong> with a concentration in{" "}
-                <strong>"Information Security"</strong>.
-              </li>
-              <li className="test">
-                In 2023, I graduated from the{" "}
-                <span className="underline">University of Central Florida</span>{" "}
-                Coding Bootcamp.
-              </li>
-              <li>
-                I am <strong>proficient</strong> in HTML, CSS, JavaScript,
-                Node.js, Express.js, React.js, MongoDB, MySQL, and more.
-              </li>
-            </ul>
-          </div>
+      <div className="about-content">
+        <h1>About Me</h1>
+        <AboutMeCard />
+        <div className="education-content">
+          <h1>Education</h1>
+          <EducationCard />
         </div>
         <div className="skills-content">
           <h1>Skills</h1>
