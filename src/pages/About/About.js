@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { AboutSec } from "./About.styles";
 import htmlpic from "../../Assets/skills/html.png";
 import csspic from "../../Assets/skills/css.png";
@@ -12,12 +13,24 @@ import expresspic from "../../Assets/skills/expressjs.png";
 import intelljpic from "../../Assets/skills/Intellij.png";
 import javapic from "../../Assets/skills/java.png";
 import heroku from "../../Assets/skills/heroku-pic.webp";
+import graphqlpic from "../../Assets/skills/GraphQL-Logo1.png";
+import electronpic from "../../Assets/skills/Electron_Software_Framework_Logo.png";
 import apollopic from "../../Assets/skills/apolloimage.png";
 import jquerypic from "../../Assets/skills/jqueryimg.png";
 import EducationCard from "../../components/EducationCard/EducationCard";
 import AboutMeCard from "../../components/AboutMeCard/AboutMe";
+import Zoom from "react-reveal/Zoom";
 
 export default function About() {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setIsLoading(false);
+  }, []);
+
+  if (isLoading) {
+    return null;
+  }
   const languagesAndDatabases = [
     { name: "HTML", image: htmlpic },
     { name: "CSS", image: csspic },
@@ -30,6 +43,8 @@ export default function About() {
     { name: "React.js", image: reactpic },
     { name: "Node.js", image: nodepic },
     { name: "Express.js", image: expresspic },
+    { name: "Electron.js", image: electronpic },
+    { name: "GraphQL", image: graphqlpic },
     { name: "Apollo", image: apollopic },
     { name: "jQuery", image: jquerypic },
   ];
@@ -42,56 +57,62 @@ export default function About() {
 
   return (
     <AboutSec className="about-section container-fluid">
-      <div className="about-content">
-        <h1>About Me</h1>
-        <AboutMeCard />
-        <div className="education-content">
-          <h1>Education</h1>
-          <EducationCard />
-        </div>
-        <div className="skills-content">
-          <h1>Skills</h1>
-          <div className="container-fluid text-center">
-            <h2> Languages & Databases </h2>
-            <div className="row justify-content-center">
-              {languagesAndDatabases.map((skill, index) => (
-                <div className="skills-img" key={index}>
-                  {skill.name}
-                  <img
-                    src={skill.image}
-                    alt={skill.name}
-                    className="img-fluid"
-                  />
-                </div>
-              ))}
-            </div>
+      <Zoom duration={1500} distance="40px">
+        <div className="about-content">
+          <h1>About Me</h1>
+          <AboutMeCard />
+          <div className="education-content">
+            <h1>Education</h1>
+            <EducationCard />
+          </div>
+          <div className="skills-content">
+            <h1>Skills</h1>
+            <div className="container-fluid text-center">
+              <h2> Languages & Databases </h2>
+              <div className="row justify-content-center">
+                {languagesAndDatabases.map((skill, index) => (
+                  <div className="skills-img" key={index}>
+                    {skill.name}
+                    <img
+                      src={skill.image}
+                      alt={skill.name}
+                      className="img-fluid"
+                    />
+                  </div>
+                ))}
+              </div>
 
-            <h3> Frameworks & Technologies </h3>
-            <div className="row justify-content-center">
-              {frameworksAndTechnologies.map((skill, index) => (
-                <div className="skills-img" key={index}>
-                  {skill.name}
-                  <img
-                    src={skill.image}
-                    alt={skill.name}
-                    className="img-fluid"
-                  />
-                </div>
-              ))}
-            </div>
+              <h3> Frameworks & Technologies </h3>
+              <div className="row justify-content-center">
+                {frameworksAndTechnologies.map((skill, index) => (
+                  <div className="skills-img" key={index}>
+                    {skill.name}
+                    <img
+                      src={skill.image}
+                      alt={skill.name}
+                      className="img-fluid"
+                    />
+                  </div>
+                ))}
+              </div>
 
-            <h4>Tools & Platforms</h4>
-            <div className="row justify-content-center">
-              {toolsAndPlatforms.map((tool, index) => (
-                <div className="skills-img" key={index}>
-                  {tool.name}
-                  <img src={tool.image} alt={tool.name} className="img-fluid" />
-                </div>
-              ))}
+              <h4>Tools & Platforms</h4>
+              <div className="row justify-content-center">
+                {toolsAndPlatforms.map((tool, index) => (
+                  <div className="skills-img" key={index}>
+                    {tool.name}
+                    <img
+                      src={tool.image}
+                      alt={tool.name}
+                      className="img-fluid"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </Zoom>
     </AboutSec>
   );
 }
