@@ -6,12 +6,14 @@ export const StyledCard = styled.div`
   }
   border: 1px solid #ccc;
   text-align: center;
-  margin-bottom: 20px;
+
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   background-color: #2c3539;
   padding: 20px;
   transition: box-shadow 0.3s ease;
+  max-width: 1100px;
+  margin: 0 auto 20px;
 
   &:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -44,7 +46,7 @@ export const LogoImage = styled.img`
 export const YearText = styled.span`
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 `;
 export const EducationInfo = styled.div`
   display: flex;

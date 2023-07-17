@@ -26,4 +26,14 @@ export const WorkSec = styled.div`
     justify-content: center;
     align-items: center;
   }
+  .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 `;
