@@ -1,7 +1,13 @@
 import React from "react";
 import "font-awesome/css/font-awesome.min.css";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Routes,
+} from "react-router-dom";
 import Particles from "./components/Particles/ParticlesBackground";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
@@ -17,6 +23,12 @@ function App() {
     <Router>
       <Particles />
       <Navbar />
+      <Home />
+      <About />
+      <Work />
+      <Resume />
+      <Contact />
+
       <Routes>
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
