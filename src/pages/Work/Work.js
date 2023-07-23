@@ -4,7 +4,6 @@ import BiteBud from "../../Assets/biteBud.png";
 import MentalOasis from "../../Assets/mental-oasis-picture.png";
 import heroShowdown from "../../Assets/hero-showdown-pic.jpg";
 import { MyDropdown, MyDropdown2, MyDropdown3 } from "./Dropdown";
-import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Zoom";
 export default function Work() {
   const [isLoading, setIsLoading] = useState(true);
@@ -25,6 +24,7 @@ export default function Work() {
         "Superhero Showdown is an interactive web game that combines the powers of React, Node.js, Express.js, MongoDB, GraphQL, Apollo, and Heroku. With two exciting game modes, 'Higher Lower' and 'Draft Game', players can immerse themselves in the world of superheroes. In 'Draft Game', strategic team building and turn-based battles await, while 'Higher Lower' challenges players to compare and choose attributes wisely. Game stats, powered by MongoDB and GraphQL, are securely stored and accessible in user profiles. With a responsive and engaging user interface built using React, Superhero Showdown delivers an exhilarating gaming experience for superhero enthusiasts.",
       projectLink: "https://hero-showdown.herokuapp.com/",
       githubLink: "https://github.com/Suzakijun1/Higher-Lower-Game",
+      technologyUsed: "React, Node.js, Express.js, MongoDB, GraphQL, Apollo, Heroku",
       dropdownComponent: <MyDropdown3 />,
     },
 
