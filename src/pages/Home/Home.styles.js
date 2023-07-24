@@ -4,7 +4,7 @@ export const HomeSec = styled.div`
   color: white;
 
   .home-content {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     line-height: 1.5;
   }
@@ -25,42 +25,12 @@ export const HomeSec = styled.div`
     justify-content: center;
     gap: 40px;
   }
-  .stacked-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .stacked-text span {
-    font-size: 60px;
-    font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    font-family: "Arial", sans-serif;
-    font-weight: bold;
-  }
+
   .vs-code-pic {
     margin-top: 40px;
     border-radius: 5%;
     height: 400px;
     background-origin: middle;
-  }
-
-  .stacked-text span:nth-child(1) {
-    color: purple;
-    animation: slideIn 2.5s ease-in-out 0s forwards;
-    align-self: flex-start;
-  }
-
-  .stacked-text span:nth-child(2) {
-    color: blue;
-    animation: slideIn 2.5s ease-in-out 2s forwards;
-  }
-
-  .stacked-text span:nth-child(3) {
-    color: green;
-    animation: slideIn 2.5s ease-in-out 4s forwards;
-    align-self: flex-end;
   }
 
   @keyframes slideIn {

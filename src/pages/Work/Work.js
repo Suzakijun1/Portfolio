@@ -24,7 +24,8 @@ export default function Work() {
         "Superhero Showdown is an interactive web game that combines the powers of React, Node.js, Express.js, MongoDB, GraphQL, Apollo, and Heroku. With two exciting game modes, 'Higher Lower' and 'Draft Game', players can immerse themselves in the world of superheroes. In 'Draft Game', strategic team building and turn-based battles await, while 'Higher Lower' challenges players to compare and choose attributes wisely. Game stats, powered by MongoDB and GraphQL, are securely stored and accessible in user profiles. With a responsive and engaging user interface built using React, Superhero Showdown delivers an exhilarating gaming experience for superhero enthusiasts.",
       projectLink: "https://hero-showdown.herokuapp.com/",
       githubLink: "https://github.com/Suzakijun1/Higher-Lower-Game",
-      technologyUsed: "React, Node.js, Express.js, MongoDB, GraphQL, Apollo, Heroku",
+      technologyUsed:
+        "React, Node.js, Express.js, MongoDB, GraphQL, Apollo, Heroku",
       dropdownComponent: <MyDropdown3 />,
     },
 
@@ -35,6 +36,7 @@ export default function Work() {
         "Mental Oasis showcases a comprehensive mental health tracker that empowers users to take control of their well-being. With features such as medication intake tracking, inspirational quotes, a customizable calendar, journal entries, and links to helpline websites, the project aims to reduce the negative impact of mental health challenges. By combining these elements, the mental health tracker offers users a holistic tool to actively monitor and improve their mental well-being.",
       projectLink: "#",
       githubLink: "https://github.com/DavidPeguero/Mental-Oasis",
+      technologyUsed: "HTML, CSS, JavaScript, Node.js, Express.js, mySQL",
       dropdownComponent: <MyDropdown2 />,
     },
     {
@@ -44,6 +46,7 @@ export default function Work() {
         "Bite-Bud is an innovative web application designed to enhance users' exploration of cities and states. By leveraging data from third-party APIs, this application enables users to effortlessly search and discover local restaurants and attractions in their desired locations. With real-time information, Bite-Bud empowers users to make informed decisions and embark on memorable experiences during their travels.",
       projectLink: "https://suzakijun1.github.io/BiteBud/",
       githubLink: "https://github.com/Suzakijun1/BiteBud",
+      technologyUsed: "HTML, CSS, JavaScript, Two Server-side APIs",
       dropdownComponent: <MyDropdown />,
     },
   ];
@@ -72,6 +75,10 @@ export default function Work() {
                   <div className="card-body">
                     <h5 className="card-title">{project.title}</h5>
                     <p className="card-text">{project.description}</p>
+                    <p className="card-text">
+                      <strong>Technologies used:</strong>{" "}
+                      {project.technologyUsed}
+                    </p>
                     <div className="d-flex flex-wrap justify-content-between align-items-center">
                       <a
                         href={project.projectLink}
