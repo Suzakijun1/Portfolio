@@ -47,7 +47,7 @@ function CustomNavbar() {
               as={NavLink}
               to={link.to}
               activeClassName="active"
-              onClick={handleMenuToggle}
+              onClick={handleNavItemClick}
             >
               <FontAwesomeIcon icon={link.icon} size="xs" /> {link.text}
             </Nav.Link>
