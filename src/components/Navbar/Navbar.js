@@ -36,17 +36,18 @@ function CustomNavbar() {
       <Navbar.Toggle aria-controls="navbar-nav" onClick={handleMenuToggle} />
       <Navbar.Collapse
         id="navbar-nav"
-        className={isMenuOpen ? "show" : ""}
-        style={{ flexDirection: "row-reverse" }}
+        style={{ flexDirection: isMenuOpen ? "row-reverse" : "row" }}
       >
-        <Nav className={`ml-auto ${isMenuOpen ? "text-center" : ""}`}>
+        <Nav
+          className={`ml-auto ${isMenuOpen ? "text-center" : "text-center"}`}
+        >
           {navLinks.map((link, index) => (
             <Nav.Link
               key={index}
               as={NavLink}
               to={link.to}
               activeClassName="active"
-              onClick={handleNavItemClick}
+              onClick={handleMenuToggle}
             >
               <FontAwesomeIcon icon={link.icon} size="xs" /> {link.text}
             </Nav.Link>
