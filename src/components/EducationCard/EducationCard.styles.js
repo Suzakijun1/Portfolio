@@ -43,11 +43,7 @@ export const LogoImage = styled.img`
     height: 60px; // Adjust the height for even smaller screens
   }
 `;
-export const YearText = styled.span`
-  display: flex;
-  align-items: center;
-  /* justify-content: flex-end; */
-`;
+
 export const EducationInfo = styled.div`
   display: flex;
   align-items: center;

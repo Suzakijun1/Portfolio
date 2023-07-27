@@ -3,7 +3,6 @@ import {
   StyledCard,
   LogoContainer,
   LogoImage,
-  YearText,
   EducationInfo,
   SpinningLogoImage,
 } from "./EducationCard.styles";
@@ -30,7 +29,7 @@ const EducationCard = () => {
             <Col xs={12} sm={8}>
               <EducationInfo>
                 <Card.Text>
-                  <strong>University of South Florida</strong>
+                  <strong>University of South Florida (2020-2022)</strong>
                   <br />
                   Degree: Bachelor of Science in{" "}
                   <span className="underline">Information Science</span> with a
@@ -38,9 +37,6 @@ const EducationCard = () => {
                   <span className="underline">Information Security</span>
                 </Card.Text>
               </EducationInfo>
-            </Col>
-            <Col xs={12} sm={2}>
-              <YearText>Year: 2020 - 2022</YearText>
             </Col>
           </Row>
         </Container>
@@ -69,15 +65,12 @@ const EducationCard = () => {
             <Col xs={12} sm={8}>
               <EducationInfo>
                 <Card.Text>
-                  <strong>University of South Florida</strong>
+                  <strong>University of South Florida (2015-2020)</strong>
                   <br />
                   Degree: Bachelor of Science in{" "}
                   <span className="underline"> Integrative Animal Biology</span>
                 </Card.Text>
               </EducationInfo>
-            </Col>
-            <Col xs={12} sm={2}>
-              <YearText>Year: 2015 - 2020</YearText>
             </Col>
           </Row>
         </Container>
